@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "LockIn Browser Extension",
+  "description": "Blocks access to specified websites",
+  "version": "1.0.0",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [{
+    "resources": ["blocked.html", "images/*", "css/*", "js/*"],
+    "matches": ["<all_urls>"]
+  }],
+  "action": {
+    "default_icon": {
+      "32": "icons/icon.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "MacCtrl+Shift+O"
+      },
+      "description": "Toggle Popup"
+    }
+  }
+}
