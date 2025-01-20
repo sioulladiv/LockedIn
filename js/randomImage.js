@@ -9,7 +9,8 @@ const images = [
 'lockinchillguy.gif',
 'meme-crypto.gif',
 'meme.jpg',
-'what-is-the-next-step-for-immigration-immigration.gif'
+'what-is-the-next-step-for-immigration-immigration.gif',
+'geeked-locked-in.gif'
 ];
 
 function getRandomImage() {
